@@ -9,16 +9,16 @@ var InsightUI = function(options) {
   if (typeof options.apiPrefix !== 'undefined') {
     this.apiPrefix = options.apiPrefix;
   } else {
-    this.apiPrefix = 'insight-lite-api';
+    this.apiPrefix = 'insight-gmcn-api';
   }
   if (typeof options.routePrefix !== 'undefined') {
     this.routePrefix = options.routePrefix;
   } else {
-    this.routePrefix = 'insight';
+    this.routePrefix = '';
   }
 };
 
-InsightUI.dependencies = ['insight-lite-api'];
+InsightUI.dependencies = ['insight-gmcn-api'];
 
 inherits(InsightUI, BaseService);
 
